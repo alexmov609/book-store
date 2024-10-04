@@ -14,7 +14,6 @@ const Home = () => {
     axios
       .get("http://127.0.0.1:5555/books")
       .then((response) => {
-        console.log(response.data.DATA);
         setBooks(response.data.data);
         setLoading(false);
       })
