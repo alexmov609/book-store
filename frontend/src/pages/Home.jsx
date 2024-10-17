@@ -52,10 +52,7 @@ const Home = () => {
       ) : showType === "table" ? (
         <BooksTable books={books} />
       ) : (
-        <>
-          {console.log("BooksCard should render")}
-          <BooksCard books={books} />
-        </>
+        <BooksCard books={books} />
       )}
     </div>
   );
